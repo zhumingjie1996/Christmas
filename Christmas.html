@@ -13,7 +13,7 @@
     <title>Merry Christmas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Tangerine:wght@400;700&family=Lora:wght@400;500;600;700&family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <style>
       * {
         -webkit-tap-highlight-color: transparent;
@@ -82,34 +82,41 @@
       #header {
         text-align: center;
         color: #D4A574;
-        font-family: 'Cinzel', 'Playfair Display', serif;
-        font-size: clamp(18px, 5vw, 35px);
-        font-weight: 600;
+        font-family: 'ZCOOL XiaoWei', 'Cormorant Garamond', 'Ma Shan Zheng', 'Lora', 'STKaiti', 'KaiTi', serif;
+        font-size: clamp(20px, 5vw, 38px);
+        font-weight: 500;
         width: 90%;
         max-width: 600px;
         padding: 0 20px;
         box-sizing: border-box;
-        letter-spacing: 2px;
-        text-shadow: 0 0 10px rgba(212, 165, 116, 0.5),
-                     0 0 20px rgba(212, 165, 116, 0.3);
+        letter-spacing: 3px;
+        line-height: 1.8;
+        text-shadow: 0 0 15px rgba(212, 165, 116, 0.6),
+                     0 0 25px rgba(212, 165, 116, 0.4),
+                     2px 2px 4px rgba(0, 0, 0, 0.3);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
 
       .enter-btn {
-        font-family: 'Cinzel', 'Playfair Display', serif;
-        font-size: clamp(18px, 2.5vw, 24px);
+        font-family: 'ZCOOL XiaoWei', 'Cormorant Garamond', 'Lora', 'STKaiti', serif;
+        font-size: clamp(18px, 2.5vw, 26px);
         color: #D4A574;
         background: transparent;
         border: 2px solid #D4A574;
         padding: 15px 40px;
         border-radius: 50px;
         cursor: pointer;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         margin-top: 30px;
         transition: all 0.3s ease;
-        text-shadow: 0 0 10px rgba(212, 165, 116, 0.5);
+        font-weight: 500;
+        text-shadow: 0 0 12px rgba(212, 165, 116, 0.6);
         box-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
         opacity: 0;
         pointer-events: none;
+        -webkit-font-smoothing: antialiased;
       }
 
       .enter-btn:hover {
@@ -121,31 +128,33 @@
 
       @media screen and (max-width: 768px) {
         #header {
-          font-size: clamp(16px, 4.5vw, 28px);
+          font-size: clamp(18px, 4.5vw, 32px);
           width: 95%;
           padding: 0 15px;
-          letter-spacing: 1.5px;
+          letter-spacing: 2px;
+          line-height: 1.7;
         }
 
         .enter-btn {
-          font-size: clamp(16px, 2.2vw, 20px);
+          font-size: clamp(16px, 2.2vw, 22px);
           padding: 12px 35px;
-          letter-spacing: 2px;
+          letter-spacing: 3px;
         }
       }
 
       @media screen and (max-width: 480px) {
         #header {
-          font-size: clamp(14px, 4vw, 22px);
+          font-size: clamp(16px, 4.2vw, 24px);
           width: 100%;
           padding: 0 10px;
-          letter-spacing: 1px;
+          letter-spacing: 1.5px;
+          line-height: 1.6;
         }
 
         .enter-btn {
-          font-size: clamp(14px, 2vw, 18px);
+          font-size: clamp(15px, 2vw, 19px);
           padding: 10px 30px;
-          letter-spacing: 1.5px;
+          letter-spacing: 2px;
         }
       }
       .header-item {
@@ -892,17 +901,17 @@ opacity: 0
 
     let myLabels = [
       "🎄✨🎄✨🎅🎅🎅🎄✨🎄✨",
-      "我们最最最亲爱的葛欣怡同学！",
-      getCurrentTime(),
-      "平安夜快乐！",
-      "也许我不能送你一束花",
-      "但我可以直接送你一棵圣诞树",
-      "愿你永远被世界的温柔包围",
-      "永远被偏爱，被珍惜",
-      "永远闪闪发光",
+      "最最最最最亲爱的葛欣怡同学！",
+      getCurrentTime() + "🕓",
+      "圣诞节快乐呀😃",
+      "很可惜没法当面送你一束花🌹",
+      "但我可以给你画一棵圣诞树🎄",
+      "愿你永远被世界的温柔包围💗",
+      "永远被偏爱和珍惜❤️",
+      "永远闪闪发光✨✨",
       "我永远_你！",
       "🎄✨🎄✨🎅🎅🎅🎄✨🎄✨",
-      "---- MJ 2025年12月24日",
+      "---- MJ 2025年12月25日",
     ];
     
     function init() {
